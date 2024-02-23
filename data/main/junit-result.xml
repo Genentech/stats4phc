@@ -1,181 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="PV" timestamp="2024-02-22T17:23:12Z" hostname="7020fb854747" tests="19" skipped="3" failures="0" errors="0" time="2.536">
-    <testcase time="1.834" classname="PV" name="getPVdata_works">
+  <testsuite name="PV" timestamp="2024-02-23T05:11:45Z" hostname="cde0bd72c729" tests="19" skipped="3" failures="0" errors="0" time="2.341">
+    <testcase time="1.67" classname="PV" name="getPVdata_works">
       <skipped message="Reason: On CRAN ('test-PV.R:14:3')"/>
     </testcase>
-    <testcase time="0.208" classname="PV" name="getPVdata_works_with_asis">
+    <testcase time="0.201" classname="PV" name="getPVdata_works_with_asis">
       <skipped message="Reason: On CRAN ('test-PV.R:33:3')"/>
     </testcase>
-    <testcase time="0.354" classname="PV" name="nonParametricPV_works"/>
-    <testcase time="0.00800000000000001" classname="PV" name="nonParametricPV_works"/>
+    <testcase time="0.345" classname="PV" name="nonParametricPV_works"/>
+    <testcase time="0.00599999999999978" classname="PV" name="nonParametricPV_works"/>
     <testcase time="0.004" classname="PV" name="nonParametricPV_works"/>
     <testcase time="0.00600000000000023" classname="PV" name="nonParametricPV_works"/>
-    <testcase time="0.0109999999999997" classname="PV" name="nonParametricPV_works">
+    <testcase time="0.0089999999999999" classname="PV" name="nonParametricPV_works">
       <skipped message="Reason: On CRAN ('test-PV.R:45:3')"/>
     </testcase>
-    <testcase time="0.0290000000000004" classname="PV" name="adjust_prevalence_works"/>
-    <testcase time="0.00800000000000001" classname="PV" name="adjust_prevalence_works"/>
-    <testcase time="0.00599999999999978" classname="PV" name="adjust_prevalence_works"/>
+    <testcase time="0.0259999999999998" classname="PV" name="adjust_prevalence_works"/>
     <testcase time="0.00600000000000023" classname="PV" name="adjust_prevalence_works"/>
-    <testcase time="0.0129999999999999" classname="PV" name="best_ppv_mnpv_works"/>
-    <testcase time="0.00599999999999978" classname="PV" name="best_ppv_mnpv_works"/>
-    <testcase time="0.00600000000000023" classname="PV" name="best_ppv_mnpv_works"/>
+    <testcase time="0.00499999999999989" classname="PV" name="adjust_prevalence_works"/>
+    <testcase time="0.00499999999999989" classname="PV" name="adjust_prevalence_works"/>
+    <testcase time="0.012" classname="PV" name="best_ppv_mnpv_works"/>
+    <testcase time="0.00500000000000034" classname="PV" name="best_ppv_mnpv_works"/>
     <testcase time="0.00499999999999989" classname="PV" name="best_ppv_mnpv_works"/>
-    <testcase time="0.0129999999999999" classname="PV" name="best_sens_spec_works"/>
+    <testcase time="0.00599999999999978" classname="PV" name="best_ppv_mnpv_works"/>
+    <testcase time="0.0110000000000001" classname="PV" name="best_sens_spec_works"/>
     <testcase time="0.00700000000000012" classname="PV" name="best_sens_spec_works"/>
-    <testcase time="0.00599999999999978" classname="PV" name="best_sens_spec_works"/>
-    <testcase time="0.00600000000000023" classname="PV" name="best_sens_spec_works"/>
+    <testcase time="0.00499999999999989" classname="PV" name="best_sens_spec_works"/>
+    <testcase time="0.00700000000000012" classname="PV" name="best_sens_spec_works"/>
   </testsuite>
-  <testsuite name="calibrationProfile" timestamp="2024-02-22T17:23:14Z" hostname="7020fb854747" tests="3" skipped="1" failures="0" errors="0" time="2.222">
-    <testcase time="0.0489999999999999" classname="calibrationProfile" name="calibrationProfile_works"/>
-    <testcase time="1.967" classname="calibrationProfile" name="calibrationProfile_works">
+  <testsuite name="calibrationProfile" timestamp="2024-02-23T05:11:47Z" hostname="cde0bd72c729" tests="3" skipped="1" failures="0" errors="0" time="2.081">
+    <testcase time="0.0470000000000002" classname="calibrationProfile" name="calibrationProfile_works"/>
+    <testcase time="1.837" classname="calibrationProfile" name="calibrationProfile_works">
       <skipped message="Reason: On CRAN ('test-calibrationProfile.R:36:3')"/>
     </testcase>
-    <testcase time="0.206" classname="calibrationProfile" name="calibrationProfile_with_user_defined_function_works"/>
+    <testcase time="0.197" classname="calibrationProfile" name="calibrationProfile_with_user_defined_function_works"/>
   </testsuite>
-  <testsuite name="getEstimates" timestamp="2024-02-22T17:23:16Z" hostname="7020fb854747" tests="48" skipped="10" failures="0" errors="0" time="1.724">
-    <testcase time="0.0609999999999999" classname="getEstimates" name="checkBinsQuantiles_works"/>
-    <testcase time="0.00600000000000023" classname="getEstimates" name="checkBinsQuantiles_works"/>
+  <testsuite name="getEstimates" timestamp="2024-02-23T05:11:49Z" hostname="cde0bd72c729" tests="48" skipped="10" failures="0" errors="0" time="1.644">
+    <testcase time="0.0499999999999998" classname="getEstimates" name="checkBinsQuantiles_works"/>
+    <testcase time="0.00499999999999989" classname="getEstimates" name="checkBinsQuantiles_works"/>
+    <testcase time="0.00800000000000001" classname="getEstimates" name="checkBinsQuantiles_works"/>
     <testcase time="0.00900000000000034" classname="getEstimates" name="checkBinsQuantiles_works"/>
+    <testcase time="0.00800000000000001" classname="getEstimates" name="checkBinsQuantiles_works"/>
     <testcase time="0.00899999999999945" classname="getEstimates" name="checkBinsQuantiles_works"/>
     <testcase time="0.00900000000000034" classname="getEstimates" name="checkBinsQuantiles_works"/>
-    <testcase time="0.00900000000000034" classname="getEstimates" name="checkBinsQuantiles_works"/>
-    <testcase time="0.00899999999999945" classname="getEstimates" name="checkBinsQuantiles_works"/>
     <testcase time="0.00999999999999979" classname="getEstimates" name="checkBinsQuantiles_works"/>
-    <testcase time="0.0280000000000005" classname="getEstimates" name="getBINNEDest_adds_outcome.low_outcome.high_and_midquantile"/>
-    <testcase time="0.00600000000000023" classname="getEstimates" name="getBINNEDest_adds_outcome.low_outcome.high_and_midquantile"/>
-    <testcase time="0.00899999999999945" classname="getEstimates" name="getBINNEDest_adds_outcome.low_outcome.high_and_midquantile">
+    <testcase time="0.0270000000000001" classname="getEstimates" name="getBINNEDest_adds_outcome.low_outcome.high_and_midquantile"/>
+    <testcase time="0.00899999999999945" classname="getEstimates" name="getBINNEDest_adds_outcome.low_outcome.high_and_midquantile"/>
+    <testcase time="0.00900000000000034" classname="getEstimates" name="getBINNEDest_adds_outcome.low_outcome.high_and_midquantile">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:52:3')"/>
     </testcase>
-    <testcase time="0.0680000000000005" classname="getEstimates" name="getERRORest_returns_errorbar_data_of_correct_dimensions"/>
-    <testcase time="0.00699999999999967" classname="getEstimates" name="getERRORest_returns_errorbar_data_of_correct_dimensions"/>
-    <testcase time="0.0129999999999999" classname="getEstimates" name="getERRORest_returns_errorbar_data_of_correct_dimensions">
+    <testcase time="0.0570000000000004" classname="getEstimates" name="getERRORest_returns_errorbar_data_of_correct_dimensions"/>
+    <testcase time="0.00599999999999934" classname="getEstimates" name="getERRORest_returns_errorbar_data_of_correct_dimensions"/>
+    <testcase time="0.0110000000000001" classname="getEstimates" name="getERRORest_returns_errorbar_data_of_correct_dimensions">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:68:3')"/>
     </testcase>
-    <testcase time="0.0280000000000005" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions"/>
+    <testcase time="0.0260000000000007" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions"/>
     <testcase time="0.00599999999999934" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions"/>
-    <testcase time="0.00500000000000078" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions"/>
-    <testcase time="0.00999999999999979" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions">
+    <testcase time="0.00499999999999989" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions"/>
+    <testcase time="0.0100000000000007" classname="getEstimates" name="getPAVAest_returns_estimates_of_correct_dimensions">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:77:3')"/>
     </testcase>
-    <testcase time="0.0699999999999994" classname="getEstimates" name="getGAMest_returns_estimates_of_correct_dimensions"/>
-    <testcase time="0.00700000000000056" classname="getEstimates" name="getGAMest_returns_estimates_of_correct_dimensions"/>
-    <testcase time="0.159" classname="getEstimates" name="getGAMest_returns_estimates_of_correct_dimensions">
+    <testcase time="0.0659999999999998" classname="getEstimates" name="getGAMest_returns_estimates_of_correct_dimensions"/>
+    <testcase time="0.00600000000000023" classname="getEstimates" name="getGAMest_returns_estimates_of_correct_dimensions"/>
+    <testcase time="0.169" classname="getEstimates" name="getGAMest_returns_estimates_of_correct_dimensions">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:97:3')"/>
     </testcase>
-    <testcase time="0.481" classname="getEstimates" name="getCGAMest_works"/>
-    <testcase time="0.00600000000000023" classname="getEstimates" name="getCGAMest_works"/>
-    <testcase time="0.173" classname="getEstimates" name="getCGAMest_works">
+    <testcase time="0.479" classname="getEstimates" name="getCGAMest_works"/>
+    <testcase time="0.00699999999999967" classname="getEstimates" name="getCGAMest_works"/>
+    <testcase time="0.172000000000001" classname="getEstimates" name="getCGAMest_works">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:112:3')"/>
     </testcase>
-    <testcase time="0.0419999999999998" classname="getEstimates" name="getMSPLINEest_returns_estimates_of_correct_dimensions"/>
-    <testcase time="0.00699999999999967" classname="getEstimates" name="getMSPLINEest_returns_estimates_of_correct_dimensions"/>
-    <testcase time="0.0230000000000006" classname="getEstimates" name="getMSPLINEest_returns_estimates_of_correct_dimensions">
+    <testcase time="0.0369999999999999" classname="getEstimates" name="getMSPLINEest_returns_estimates_of_correct_dimensions"/>
+    <testcase time="0.00600000000000023" classname="getEstimates" name="getMSPLINEest_returns_estimates_of_correct_dimensions"/>
+    <testcase time="0.0229999999999997" classname="getEstimates" name="getMSPLINEest_returns_estimates_of_correct_dimensions">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:126:3')"/>
     </testcase>
-    <testcase time="0.0339999999999998" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.00999999999999979" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.0100000000000007" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.00999999999999979" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.00999999999999979" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.0310000000000006" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.00899999999999945" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.00900000000000034" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.00800000000000001" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.00800000000000001" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
     <testcase time="0.0119999999999996" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.0490000000000004" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.00699999999999967" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.00700000000000056" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
-    <testcase time="0.0140000000000002" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods">
+    <testcase time="0.0449999999999999" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.00600000000000023" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.00600000000000023" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods"/>
+    <testcase time="0.0129999999999999" classname="getEstimates" name="getEsts_returns_estimates_of_correct_dimensions_and_correct_number_of_methods">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:187:3')"/>
     </testcase>
-    <testcase time="0.0409999999999995" classname="getEstimates" name="asis_method_works_in_getEsts">
+    <testcase time="0.0379999999999994" classname="getEstimates" name="asis_method_works_in_getEsts">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:262:3')"/>
     </testcase>
-    <testcase time="0.032" classname="getEstimates" name="getConstraints_works">
+    <testcase time="0.0290000000000008" classname="getEstimates" name="getConstraints_works">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:268:3')"/>
     </testcase>
-    <testcase time="0.0419999999999998" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
-    <testcase time="0.0280000000000005" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
-    <testcase time="0.0229999999999997" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
-    <testcase time="0.0220000000000002" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
-    <testcase time="0.0209999999999999" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
+    <testcase time="0.0369999999999999" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
+    <testcase time="0.0190000000000001" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
+    <testcase time="0.0189999999999992" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
+    <testcase time="0.0190000000000001" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
+    <testcase time="0.0200000000000005" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
     <testcase time="0.00999999999999979" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
-    <testcase time="0.0220000000000002" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
     <testcase time="0.0209999999999999" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
-    <testcase time="0.0289999999999999" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested.">
+    <testcase time="0.0190000000000001" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested."/>
+    <testcase time="0.0270000000000001" classname="getEstimates" name="summaryTable_argument_returns_appropriately_sized_dataframe_when_requested.">
       <skipped message="Reason: On CRAN ('test-getEstimates.R:329:3')"/>
     </testcase>
   </testsuite>
-  <testsuite name="locf" timestamp="2024-02-22T17:23:18Z" hostname="7020fb854747" tests="2" skipped="0" failures="0" errors="0" time="0.051">
-    <testcase time="0.04" classname="locf" name="zipFastener_checks_inputs"/>
-    <testcase time="0.0110000000000001" classname="locf" name="zipFastener_checks_inputs"/>
+  <testsuite name="locf" timestamp="2024-02-23T05:11:51Z" hostname="cde0bd72c729" tests="2" skipped="0" failures="0" errors="0" time="0.046">
+    <testcase time="0.0359999999999996" classname="locf" name="zipFastener_checks_inputs"/>
+    <testcase time="0.00999999999999979" classname="locf" name="zipFastener_checks_inputs"/>
   </testsuite>
-  <testsuite name="riskProfile" timestamp="2024-02-22T17:23:18Z" hostname="7020fb854747" tests="8" skipped="7" failures="0" errors="0" time="4.6">
-    <testcase time="1.344" classname="riskProfile" name="riskProfile_works">
+  <testsuite name="riskProfile" timestamp="2024-02-23T05:11:51Z" hostname="cde0bd72c729" tests="8" skipped="7" failures="0" errors="0" time="4.339">
+    <testcase time="1.307" classname="riskProfile" name="riskProfile_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:38:3')"/>
     </testcase>
-    <testcase time="0.404" classname="riskProfile" name="BINNED_method_with_errorbar.sem_and_passing_method_parameters_works">
+    <testcase time="0.363" classname="riskProfile" name="BINNED_method_with_errorbar.sem_and_passing_method_parameters_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:64:3')"/>
     </testcase>
-    <testcase time="1.091" classname="riskProfile" name="plot.raw_and_rev.order_works">
+    <testcase time="0.994" classname="riskProfile" name="plot.raw_and_rev.order_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:76:3')"/>
     </testcase>
-    <testcase time="0.469000000000001" classname="riskProfile" name="User_defined_estimation_functions_work"/>
-    <testcase time="0.446999999999999" classname="riskProfile" name="CGAM_works">
+    <testcase time="0.453000000000001" classname="riskProfile" name="User_defined_estimation_functions_work"/>
+    <testcase time="0.419" classname="riskProfile" name="CGAM_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:130:3')"/>
     </testcase>
-    <testcase time="0.266" classname="riskProfile" name="comparing_single_predictive_quantity_works">
+    <testcase time="0.261999999999999" classname="riskProfile" name="comparing_single_predictive_quantity_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:148:3')"/>
     </testcase>
-    <testcase time="0.346" classname="riskProfile" name="single_PV_not_PC_works">
+    <testcase time="0.318" classname="riskProfile" name="single_PV_not_PC_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:161:3')"/>
     </testcase>
-    <testcase time="0.233000000000001" classname="riskProfile" name="arguments_show.best.pv_and_show.nonparam.pv_works">
+    <testcase time="0.222999999999999" classname="riskProfile" name="arguments_show.best.pv_and_show.nonparam.pv_works">
       <skipped message="Reason: On CRAN ('test-riskProfile.R:175:3')"/>
     </testcase>
   </testsuite>
-  <testsuite name="sensSpec" timestamp="2024-02-22T17:23:23Z" hostname="7020fb854747" tests="3" skipped="2" failures="0" errors="0" time="0.863">
-    <testcase time="0.228999999999999" classname="sensSpec" name="sensSpec_can_order_scores"/>
-    <testcase time="0.0190000000000001" classname="sensSpec" name="sensSpec_can_order_scores">
+  <testsuite name="sensSpec" timestamp="2024-02-23T05:11:55Z" hostname="cde0bd72c729" tests="3" skipped="2" failures="0" errors="0" time="0.813">
+    <testcase time="0.213000000000001" classname="sensSpec" name="sensSpec_can_order_scores"/>
+    <testcase time="0.0179999999999989" classname="sensSpec" name="sensSpec_can_order_scores">
       <skipped message="Reason: On CRAN ('test-sensSpec.R:17:3')"/>
     </testcase>
-    <testcase time="0.615" classname="sensSpec" name="sensSpec_works">
+    <testcase time="0.582000000000001" classname="sensSpec" name="sensSpec_works">
       <skipped message="Reason: On CRAN ('test-sensSpec.R:30:3')"/>
     </testcase>
   </testsuite>
-  <testsuite name="utils" timestamp="2024-02-22T17:23:24Z" hostname="7020fb854747" tests="31" skipped="2" failures="0" errors="0" time="0.402">
-    <testcase time="0.0389999999999997" classname="utils" name="inputCheck_works"/>
+  <testsuite name="utils" timestamp="2024-02-23T05:11:56Z" hostname="cde0bd72c729" tests="31" skipped="2" failures="0" errors="0" time="0.391">
+    <testcase time="0.0440000000000005" classname="utils" name="inputCheck_works"/>
     <testcase time="0.00999999999999979" classname="utils" name="inputCheck_works"/>
     <testcase time="0.00900000000000034" classname="utils" name="inputCheck_works"/>
-    <testcase time="0.0080000000000009" classname="utils" name="inputCheck_works"/>
-    <testcase time="0.00699999999999967" classname="utils" name="inputCheck_works"/>
+    <testcase time="0.0109999999999992" classname="utils" name="inputCheck_works"/>
+    <testcase time="0.00500000000000078" classname="utils" name="inputCheck_works"/>
     <testcase time="0.00600000000000023" classname="utils" name="inputCheck_works"/>
-    <testcase time="0.00999999999999979" classname="utils" name="inputCheck_works"/>
-    <testcase time="0.020999999999999" classname="utils" name="inputCheck_works"/>
-    <testcase time="0.00600000000000023" classname="utils" name="inputCheck_works"/>
-    <testcase time="0.00900000000000034" classname="utils" name="inputCheck_works">
+    <testcase time="0.00899999999999856" classname="utils" name="inputCheck_works"/>
+    <testcase time="0.0200000000000014" classname="utils" name="inputCheck_works"/>
+    <testcase time="0.00599999999999845" classname="utils" name="inputCheck_works"/>
+    <testcase time="0.0080000000000009" classname="utils" name="inputCheck_works">
       <skipped message="Reason: On CRAN ('test-utils.R:29:3')"/>
     </testcase>
     <testcase time="0.0269999999999992" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00700000000000145" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00600000000000023" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00500000000000078" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
     <testcase time="0.00499999999999901" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00699999999999967" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00400000000000134" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00599999999999845" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.0100000000000016" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00499999999999901" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00500000000000078" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00399999999999956" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
     <testcase time="0.00900000000000034" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00500000000000078" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00799999999999912" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.0080000000000009" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
     <testcase time="0.00999999999999979" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.00799999999999912" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
     <testcase time="0.00900000000000034" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00900000000000034" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00900000000000034" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.0120000000000005" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
     <testcase time="0.00999999999999979" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.00899999999999856" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.0100000000000016" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
-    <testcase time="0.0269999999999992" classname="utils" name="orderInputs_works_as_expected">
+    <testcase time="0.00999999999999979" classname="utils" name="methods_returns_appropriate_length_list_of_lists"/>
+    <testcase time="0.0259999999999998" classname="utils" name="orderInputs_works_as_expected">
       <skipped message="Reason: On CRAN ('test-utils.R:91:3')"/>
     </testcase>
-    <testcase time="0.0429999999999993" classname="utils" name="add0thPercPC_works"/>
-    <testcase time="0.0350000000000001" classname="utils" name="add0thPercPV_works"/>
-    <testcase time="0.016" classname="utils" name="listMethodCheck_works"/>
+    <testcase time="0.0389999999999997" classname="utils" name="add0thPercPC_works"/>
+    <testcase time="0.0299999999999994" classname="utils" name="add0thPercPV_works"/>
+    <testcase time="0.0169999999999995" classname="utils" name="listMethodCheck_works"/>
     <testcase time="0.00999999999999979" classname="utils" name="listMethodCheck_works"/>
   </testsuite>
 </testsuites>
