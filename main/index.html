@@ -106,7 +106,7 @@ positive / negative predictive values.
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>This is a basic example which demonstrates one of the plotting functions from the package, <code>riskProfile</code>:</p>
+<p>This is a basic example which demonstrates <code>riskProfile</code> function (i.e. Predictiveness Curve):</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://genentech.github.io/stats4phc">stats4phc</a></span><span class="op">)</span></span>
 <span></span>
@@ -117,19 +117,15 @@ positive / negative predictive values.
 <span></span>
 <span><span class="co"># Default plot includes 1-NPV, PPV, and a predictiveness curve (PC) </span></span>
 <span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/riskProfile.html">riskProfile</a></span><span class="op">(</span>outcome <span class="op">=</span> <span class="va">truth</span>, score <span class="op">=</span> <span class="va">rscore</span><span class="op">)</span></span>
-<span><span class="co"># p1 is a list with "plot" and "data" elements, see `p1$plot` or `p1$data`</span></span>
-<span></span>
-<span><span class="co"># You can select an estimation method with specific arguments</span></span>
-<span><span class="va">p2</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/riskProfile.html">riskProfile</a></span><span class="op">(</span></span>
-<span>  outcome <span class="op">=</span> <span class="va">truth</span>,</span>
-<span>  score <span class="op">=</span> <span class="va">rscore</span>,</span>
-<span>  methods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
-<span>    <span class="st">"gam"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"gam"</span>, bs <span class="op">=</span> <span class="st">"tp"</span>, k <span class="op">=</span> <span class="fl">5</span>, logscores <span class="op">=</span> <span class="cn">FALSE</span>, fitonPerc <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
-<span>    <span class="st">"asis"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"asis"</span><span class="op">)</span>, <span class="co"># no arguments for this method</span></span>
-<span>    <span class="st">"bin"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"binned"</span>, quantiles <span class="op">=</span> <span class="fl">10</span>, errorbar.sem <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span>  <span class="op">)</span></span>
-<span><span class="op">)</span></span>
-<span><span class="co"># see `p2$plot` or `p2$data`</span></span></code></pre></div>
+<span><span class="va">p1</span><span class="op">$</span><span class="va">plot</span></span>
+<span><span class="co"># You can also access the underlying data with `p1$data`</span></span></code></pre></div>
+<p><img src="reference/figures/readme_p1.png"></p>
+<p><br></p>
+<p>and <code>sensSpec</code> function (Sensitivity and Specificity Plot):</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">p2</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/sensSpec.html">sensSpec</a></span><span class="op">(</span>outcome <span class="op">=</span> <span class="va">truth</span>, score <span class="op">=</span> <span class="va">rscore</span><span class="op">)</span></span>
+<span><span class="va">p2</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
+<p><img src="reference/figures/readme_p2.png"></p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">
