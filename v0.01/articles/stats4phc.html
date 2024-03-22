@@ -34,7 +34,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">stats4phc</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.01</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -304,12 +304,17 @@ layers, so please double check your results.</p>
 <span>  score <span class="op">=</span> <span class="va">rscore</span>, </span>
 <span>  methods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"asis"</span>, <span class="st">"gam"</span><span class="op">)</span>, </span>
 <span>  include <span class="op">=</span> <span class="st">"PC"</span></span>
-<span><span class="op">)</span></span>
-<span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
+<span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## Warning: No shared levels found between `names(values)` of the manual scale and the</span></span>
+<span><span class="co">## data's <span style="color: #00BB00;">linewidth</span> values.</span></span></code></pre>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
+<pre><code><span><span class="co">## Warning: No shared levels found between `names(values)` of the manual scale and the</span></span>
+<span><span class="co">## data's <span style="color: #00BB00;">linewidth</span> values.</span></span></code></pre>
 <p><img src="stats4phc_files/figure-html/unnamed-chunk-8-1.png" width="614.4"></p>
 <p>for your publication with some minor adjustments, here is how you can
 change colours and line types:</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span><span class="va">p</span><span class="op">$</span><span class="va">plot</span> <span class="op">+</span> </span>
 <span>  <span class="co"># change the colours to blue for "gam" and darkgreen for "asis"</span></span>
@@ -318,6 +323,8 @@ change colours and line types:</p>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html" class="external-link">scale_linetype_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"gam"</span> <span class="op">=</span> <span class="st">"solid"</span>, <span class="st">"asis"</span> <span class="op">=</span> <span class="st">"solid"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## Scale for <span style="color: #00BB00;">colour</span> is already present.</span></span>
 <span><span class="co">## Adding another scale for <span style="color: #00BB00;">colour</span>, which will replace the existing scale.</span></span></code></pre>
+<pre><code><span><span class="co">## Warning: No shared levels found between `names(values)` of the manual scale and the</span></span>
+<span><span class="co">## data's <span style="color: #00BB00;">linewidth</span> values.</span></span></code></pre>
 <p><img src="stats4phc_files/figure-html/unnamed-chunk-9-1.png" width="614.4"></p>
 <p>Otherwise, you can use the <code>$data</code> element to construct
 your own graph as well.</p>
@@ -343,7 +350,7 @@ be used, or as a list, in which case you can change the parameters of
 the estimation.</p>
 <p>The character vector approach, using the default parameter values, is
 as follows:</p>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">methods</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"gam"</span>, <span class="st">"cgam"</span><span class="op">)</span></span></code></pre></div>
 <p>To see the possible arguments and their defaults, look into the
 estimation function documentation, which is always available as
@@ -356,7 +363,7 @@ function (e.g. <code>getCGAMest</code>). Here is the list of all:</p>
 <code>-1</code>, which refers to automatic selection.</p>
 <p>Otherwise, you can specify the estimation methods as a list, in which
 case you can change the argument values, e.g.:</p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">methods</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
 <span>  gam3 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"gam"</span>, k <span class="op">=</span> <span class="fl">3</span><span class="op">)</span>,</span>
 <span>  gam5 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"gam"</span>, k <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>,</span>
@@ -370,7 +377,7 @@ function.</p>
 <code>"mspline"</code> always fit on percentiles. If you want to change
 this, you need to specify it through an argument <code>fitonPerc</code>,
 such as:</p>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">methods</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>mspline <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"mspline"</span>, fitonPerc <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p>Finally, method <code>"asis"</code> is a specific “estimation
 method”, which takes the input “as is”, it does not perform any
@@ -393,7 +400,7 @@ function which:</p>
 (result of your estimation).</p></li>
 </ul>
 <p>Here is an example:</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># User-defined estimation function - logistic regression</span></span>
 <span></span>
 <span><span class="co"># Function needs to take exactly these two arguments</span></span>
@@ -419,7 +426,7 @@ function which:</p>
 <span><span class="va">methods</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>my_logistic <span class="op">=</span> <span class="va">my_logistic</span><span class="op">)</span></span></code></pre></div>
 <p>Note that you can also combine user-defined functions with already
 predefined functions, e.g.:</p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">methods</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>my_logistic <span class="op">=</span> <span class="va">my_logistic</span>, gam <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"gam"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p>Hint: if you cannot get your function to work correctly, use
 <code><a href="https://rdrr.io/r/base/browser.html" class="external-link">browser()</a></code> in your function to interactively debug it in
@@ -434,7 +441,7 @@ order to see what’s wrong.</p>
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by Ondrej Slama, Darrick Shen, Verena Steffen, Michel Friesenhahn, Christina Rabe, F. Hoffmann-La Roche AG.</p>
+<p>Developed by Ondrej Slama, Darrick Shen, Verena Steffen, Doug Kelkhoff, Michel Friesenhahn, Christina Rabe, F. Hoffmann-La Roche AG.</p>
 </div>
 
 <div class="pkgdown-footer-right">
