@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "https://raw.githubusercontent.com/cobertura/cobertura/master/cobertura/src/site/htdocs/xml/coverage-04.dtd">
-<coverage line-rate="0.967081850533808" branch-rate="0" lines-covered="1087" lines-valid="1124" branches-covered="0" branches-valid="0" complexity="0" version="3.6.4" timestamp="2024-06-10 13:31:07.495549">
+<coverage line-rate="0.967081850533808" branch-rate="0" lines-covered="1087" lines-valid="1124" branches-covered="0" branches-valid="0" complexity="0" version="3.6.4" timestamp="2024-06-10 15:23:56.496618">
   <sources>
     <source>/__w/stats4phc/stats4phc/stats4phc</source>
   </sources>
