@@ -158,13 +158,14 @@ estimation or smoothing.</p>
 <code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/riskProfile.html">riskProfile</a></span><span class="op">(</span>outcome <span class="op">=</span> <span class="va">truth</span>, score <span class="op">=</span> <span class="va">rscore</span>, include <span class="op">=</span> <span class="st">"PC"</span><span class="op">)</span></span>
 <span><span class="va">p</span><span class="op">$</span><span class="va">plot</span></span></code></pre></div>
 <p><img src="stats4phc_files/figure-html/unnamed-chunk-2-1.png" width="768"></p>
-<p>Ideally, all subjects in the population that have the condition
-(=&gt; prevalence) are marked as having the condition (predicted risk =
-1) and all subjects without the condition (=&gt; 1 - prevalence) are
-marked as not having the condition (predicted risk = 0). This implies
-that the ideal predictiveness curve is 0 for all subjects not having the
-condition, and then it steps (jumps) at <code>1 - prevalence</code> to 1
-for all the subjects having the condition (see the gray line).</p>
+<p>In an ideal scenario, all subjects in the population that have the
+condition (=&gt; prevalence) are marked as having the condition
+(predicted risk = 1) and all subjects without the condition (=&gt; 1 -
+prevalence) are marked as not having the condition (predicted risk = 0).
+This implies that the ideal predictiveness curve is 0 for all subjects
+not having the condition, and then it steps (jumps) at
+<code>1 - prevalence</code> to 1 for all the subjects having the
+condition (see the gray line).</p>
 <p>In reality, the curves are not step functions. The more flat the
 curves get, the less discrimination, and therefore utility, there is in
 the model.</p>
@@ -186,14 +187,14 @@ possible.</p>
 <ul>
 <li><p>in terms of PPV: If all the subjects with the condition are
 predicted perfectly, then PPV = TP / PP = 1 (TP = true positive, PP =
-predicted positive). Hence, all the subjects with the condition must be
-higher than <code>1 - prevalence</code> on the prediction percentile for
-PPV = 1.</p></li>
+predicted positive). Hence, PPV = 1 at the score percentile greater or
+equal to <code>1 - prevalence</code> (these scores refer to the subjects
+with the condition).</p></li>
 <li><p>in terms of 1-NPV: If all the subjects without the condition are
 predicted perfectly, then NPV = TN / PN = 1 (TN = true negative, PN =
-predicted negative). Hence, all the subjects without the condition must
-be lower than <code>1 - prevalence</code> on the risk percentile for
-1-NPV = 0.</p></li>
+predicted negative). Hence, 1-NPV = 0 at the score percentile lower or
+equal to <code>1 - prevalence</code> (these scores refer to the subjects
+without the condition).</p></li>
 </ul>
 </div>
 <div class="section level3">
