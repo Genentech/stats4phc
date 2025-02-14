@@ -34,11 +34,9 @@ nonParametricPV <- function(outcome, score) {
   ppv <- vapply(
     thresh.predictions[1:(length(score) - 1)],
     function(x) {
-      yardstick::ppv_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      tp <- sum(outcome == 1 & x == 1)
+      fp <- sum(outcome == 0 & x == 1)
+      tp / (tp + fp)
     },
     numeric(1)
   )
@@ -46,11 +44,9 @@ nonParametricPV <- function(outcome, score) {
   npv <- vapply(
     thresh.predictions[1:(length(score) - 1)],
     function(x) {
-      yardstick::npv_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      tn <- sum(outcome == 0 & x == 0)
+      fn <- sum(outcome == 1 & x == 0)
+      tn / (tn + fn)
     },
     numeric(1)
   )
@@ -138,11 +134,7 @@ nonParametricTR <- function(outcome, score) {
   senses <- vapply(
     thresh.predictions[1:(length(score) - 1)],
     function(x) {
-      yardstick::sens_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      sum(outcome == 1 & x == 1) / sum(outcome == 1)
     },
     numeric(1)
   )
@@ -150,11 +142,7 @@ nonParametricTR <- function(outcome, score) {
   specs <- vapply(
     thresh.predictions[1:(length(score) - 1)],
     function(x) {
-      yardstick::spec_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      sum(outcome == 0 & x == 0) / sum(outcome == 0)
     },
     numeric(1)
   )
