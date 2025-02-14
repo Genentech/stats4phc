@@ -132,7 +132,7 @@ nonParametricTR <- function(outcome, score) {
 
   # Calc sensitivities and specificities at each risk percentile threshold
   senses <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
       sum(outcome == 1 & x == 1) / sum(outcome == 1)
     },
@@ -140,7 +140,7 @@ nonParametricTR <- function(outcome, score) {
   )
 
   specs <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
       sum(outcome == 0 & x == 0) / sum(outcome == 0)
     },
@@ -149,10 +149,10 @@ nonParametricTR <- function(outcome, score) {
 
   # Create a data.frame
   dat <- data.frame(
-    score = c(min(score), score),
-    percentile = c(0, ecdf(score)(score)),
-    Sensitivity = c(1, senses, 0),
-    Specificity = c(0, specs, 1)
+    score = score,
+    percentile = ecdf(score)(score),
+    Sensitivity = senses,
+    Specificity = specs
   ) %>%
     tidyr::pivot_longer(
       cols = c("Sensitivity", "Specificity"),
