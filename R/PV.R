@@ -32,7 +32,7 @@ nonParametricPV <- function(outcome, score) {
   thresh.predictions <- lapply(score, function(x) as.numeric(score > x))
 
   ppv <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
       tp <- sum(outcome == 1 & x == 1)
       fp <- sum(outcome == 0 & x == 1)
@@ -42,7 +42,7 @@ nonParametricPV <- function(outcome, score) {
   )
 
   npv <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
       tn <- sum(outcome == 0 & x == 0)
       fn <- sum(outcome == 1 & x == 0)
@@ -54,8 +54,8 @@ nonParametricPV <- function(outcome, score) {
   threshold.data <- data.frame(
     score = score,
     percentile = ecdf(score)(score),
-    PPV = c(prev, ppv),
-    NPV = c(npv, 1 - prev)
+    PPV = ppv,
+    NPV = npv
   ) %>%
     mutate(MNPV = 1 - .data$NPV) %>%
     tidyr::fill(
