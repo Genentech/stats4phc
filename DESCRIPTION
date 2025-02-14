@@ -1,7 +1,7 @@
 Package: stats4phc
 Title: Performance Evaluation for the Prognostic Value of Predictive Models Intended to Support 
   Personalized Healthcare Through Predictiveness Curves and Positive / Negative Predictive Values
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person("Ondrej", "Slama", email = "ondrej.slama@roche.com", role = c("aut", "cre")),
     person("Darrick", "Shen", email = "shend9@gene.com", role = "aut"),
