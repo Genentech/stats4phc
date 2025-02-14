@@ -107,8 +107,8 @@ table.table-condensed {
       </ul>
       <div class="tab-content" data-tabsetid="covr">
         <div class="tab-pane active" title="Files" data-value="Files" id="tab-covr-1">
-          <div class="datatables html-widget html-fill-item" id="htmlwidget-ba733d3f1ac48b03ba01" style="width:100%;height:500px;"></div>
-          <script type="application/json" data-for="htmlwidget-ba733d3f1ac48b03ba01">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["<a href=\"#\">R/getEstimates.R<\/a>","<a href=\"#\">R/riskProfile.R<\/a>","<a href=\"#\">R/calibrationProfile.R<\/a>","<a href=\"#\">R/utils.R<\/a>","<a href=\"#\">R/PV.R<\/a>","<a href=\"#\">R/sensSpec.R<\/a>","<a href=\"#\">R/locf.R<\/a>"],[871,503,299,327,230,131,144],[325,184,130,121,121,58,42],[293,184,130,121,121,58,42],[32,0,0,0,0,0,0],["11","10","7","15","60","7","4"],["90.15%","100.00%","100.00%","100.00%","100.00%","100.00%","100.00%"]],"container":"<table class=\"row-border\">\n  <thead>\n    <tr>\n      <th>File<\/th>\n      <th>Lines<\/th>\n      <th>Relevant<\/th>\n      <th>Covered<\/th>\n      <th>Missed<\/th>\n      <th>Hits / Line<\/th>\n      <th>Coverage<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"dom":"t","paging":false,"columnDefs":[{"targets":6,"createdCell":"function(td, cellData, rowData, row, col) {\n  var percent = cellData.replace(\"%\", \"\");\n  if (percent > 90) {\n    var grad = \"linear-gradient(90deg, #edfde7 \" + cellData + \", white \" + cellData + \")\";\n  } else if (percent > 75) {\n    var grad = \"linear-gradient(90deg, #f9ffe5 \" + cellData + \", white \" + cellData + \")\";\n  } else {\n    var grad = \"linear-gradient(90deg, #fcece9 \" + cellData + \", white \" + cellData + \")\";\n  }\n  $(td).css(\"background\", grad);\n}\n"},{"className":"dt-right","targets":[1,2,3,4]},{"name":"File","targets":0},{"name":"Lines","targets":1},{"name":"Relevant","targets":2},{"name":"Covered","targets":3},{"name":"Missed","targets":4},{"name":"Hits / Line","targets":5},{"name":"Coverage","targets":6}],"order":[],"autoWidth":false,"orderClasses":false},"callback":"function(table) {\ntable.on('click.dt', 'a', function() {\n  files = $('div#files div');\n  files.not('div.hidden').addClass('hidden');\n  id = $(this).text();\n  files.filter('div[id=\\'' + id + '\\']').removeClass('hidden');\n  $('ul.nav a[data-value=Source]').text(id).tab('show');\n});\n}"},"evals":["options.columnDefs.0.createdCell","callback"],"jsHooks":[]}</script>
+          <div class="datatables html-widget html-fill-item" id="htmlwidget-79f8af1f9da63352e510" style="width:100%;height:500px;"></div>
+          <script type="application/json" data-for="htmlwidget-79f8af1f9da63352e510">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["<a href=\"#\">R/getEstimates.R<\/a>","<a href=\"#\">R/riskProfile.R<\/a>","<a href=\"#\">R/calibrationProfile.R<\/a>","<a href=\"#\">R/utils.R<\/a>","<a href=\"#\">R/PV.R<\/a>","<a href=\"#\">R/sensSpec.R<\/a>","<a href=\"#\">R/locf.R<\/a>"],[871,503,299,327,230,131,144],[325,184,130,121,121,58,42],[293,184,130,121,121,58,42],[32,0,0,0,0,0,0],["11","10","7","15","61","7","4"],["90.15%","100.00%","100.00%","100.00%","100.00%","100.00%","100.00%"]],"container":"<table class=\"row-border\">\n  <thead>\n    <tr>\n      <th>File<\/th>\n      <th>Lines<\/th>\n      <th>Relevant<\/th>\n      <th>Covered<\/th>\n      <th>Missed<\/th>\n      <th>Hits / Line<\/th>\n      <th>Coverage<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"dom":"t","paging":false,"columnDefs":[{"targets":6,"createdCell":"function(td, cellData, rowData, row, col) {\n  var percent = cellData.replace(\"%\", \"\");\n  if (percent > 90) {\n    var grad = \"linear-gradient(90deg, #edfde7 \" + cellData + \", white \" + cellData + \")\";\n  } else if (percent > 75) {\n    var grad = \"linear-gradient(90deg, #f9ffe5 \" + cellData + \", white \" + cellData + \")\";\n  } else {\n    var grad = \"linear-gradient(90deg, #fcece9 \" + cellData + \", white \" + cellData + \")\";\n  }\n  $(td).css(\"background\", grad);\n}\n"},{"className":"dt-right","targets":[1,2,3,4]},{"name":"File","targets":0},{"name":"Lines","targets":1},{"name":"Relevant","targets":2},{"name":"Covered","targets":3},{"name":"Missed","targets":4},{"name":"Hits / Line","targets":5},{"name":"Coverage","targets":6}],"order":[],"autoWidth":false,"orderClasses":false},"callback":"function(table) {\ntable.on('click.dt', 'a', function() {\n  files = $('div#files div');\n  files.not('div.hidden').addClass('hidden');\n  id = $(this).text();\n  files.filter('div[id=\\'' + id + '\\']').removeClass('hidden');\n  $('ul.nav a[data-value=Source]').text(id).tab('show');\n});\n}"},"evals":["options.columnDefs.0.createdCell","callback"],"jsHooks":[]}</script>
         </div>
         <div class="tab-pane" title="Source" data-value="Source" id="tab-covr-2">
           <div id="files">
@@ -16318,7 +16318,7 @@ table.table-condensed {
                     <td class="num">35</td>
                     <td class="coverage">11<em>x</em></td>
                     <td class="col-sm-12">
-                      <pre class="language-r">    thresh.predictions[1:(length(score) - 1)],</pre>
+                      <pre class="language-r">    thresh.predictions,</pre>
                     </td>
                   </tr>
                   <tr class="covered">
@@ -16330,28 +16330,28 @@ table.table-condensed {
                   </tr>
                   <tr class="covered">
                     <td class="num">37</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">      yardstick::ppv_vec(</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">38</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">        truth = factor(outcome, levels = c("1", "0")),</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">39</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">        estimate = factor(x, levels = c("1", "0")),</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">40</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">        event_level = "first"</pre>
                     </td>
@@ -16402,7 +16402,7 @@ table.table-condensed {
                     <td class="num">47</td>
                     <td class="coverage">11<em>x</em></td>
                     <td class="col-sm-12">
-                      <pre class="language-r">    thresh.predictions[1:(length(score) - 1)],</pre>
+                      <pre class="language-r">    thresh.predictions,</pre>
                     </td>
                   </tr>
                   <tr class="covered">
@@ -16414,28 +16414,28 @@ table.table-condensed {
                   </tr>
                   <tr class="covered">
                     <td class="num">49</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">      yardstick::npv_vec(</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">50</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">        truth = factor(outcome, levels = c("1", "0")),</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">51</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">        estimate = factor(x, levels = c("1", "0")),</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">52</td>
-                    <td class="coverage">429<em>x</em></td>
+                    <td class="coverage">440<em>x</em></td>
                     <td class="col-sm-12">
                       <pre class="language-r">        event_level = "first"</pre>
                     </td>
@@ -16500,14 +16500,14 @@ table.table-condensed {
                     <td class="num">61</td>
                     <td class="coverage">11<em>x</em></td>
                     <td class="col-sm-12">
-                      <pre class="language-r">    PPV = c(prev, ppv),</pre>
+                      <pre class="language-r">    PPV = ppv,</pre>
                     </td>
                   </tr>
                   <tr class="covered">
                     <td class="num">62</td>
                     <td class="coverage">11<em>x</em></td>
                     <td class="col-sm-12">
-                      <pre class="language-r">    NPV = c(npv, 1 - prev)</pre>
+                      <pre class="language-r">    NPV = npv</pre>
                     </td>
                   </tr>
                   <tr class="never">
