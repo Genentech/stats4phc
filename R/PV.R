@@ -32,7 +32,7 @@ nonParametricPV <- function(outcome, score) {
   thresh.predictions <- lapply(score, function(x) as.numeric(score > x))
 
   ppv <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
       yardstick::ppv_vec(
         truth = factor(outcome, levels = c("1", "0")),
@@ -44,7 +44,7 @@ nonParametricPV <- function(outcome, score) {
   )
 
   npv <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
       yardstick::npv_vec(
         truth = factor(outcome, levels = c("1", "0")),
@@ -58,8 +58,8 @@ nonParametricPV <- function(outcome, score) {
   threshold.data <- data.frame(
     score = score,
     percentile = ecdf(score)(score),
-    PPV = c(prev, ppv),
-    NPV = c(npv, 1 - prev)
+    PPV = ppv,
+    NPV = npv
   ) %>%
     mutate(MNPV = 1 - .data$NPV) %>%
     tidyr::fill(
