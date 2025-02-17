@@ -30,7 +30,7 @@ remotes::install_github(repo = "genentech/stats4phc")
 For reproducibility, refer to a specific version tag, for example
 
 ``` r
-remotes::install_github(repo = "genentech/stats4phc", ref = "v0.1.1")
+remotes::install_github(repo = "genentech/stats4phc", ref = "v0.1.2")
 ```
 
 

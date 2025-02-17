@@ -67,6 +67,10 @@ sensSpec <- function(outcome,
   dat <- split(dat, dat$method) %>%
     lapply(\(d) nonParametricTR(outcome = d$outcome, score = d$estimate)) %>%
     bind_rows(.id = "method")
+  
+  if (!plot.raw) {
+    dat <- add0thPercTR(dat)
+  }
 
   # Plot
   p <- ggplot(dat) +

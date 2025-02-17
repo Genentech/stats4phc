@@ -303,6 +303,30 @@ add0thPercPV <- function(x) {
 }
 
 
+add0thPercTR <- function(x) {
+  bind_rows(
+    x,
+    x %>%
+      group_by(.data$method) %>%
+      summarise(
+        score = NA,
+        percentile = 0,
+        pf = "Sensitivity",
+        value = 1
+      ),
+    x %>%
+      group_by(.data$method) %>%
+      summarise(
+        score = NA,
+        percentile = 0,
+        pf = "Specificity",
+        value = 0
+      )
+  ) %>%
+    arrange(.data$method, .data$pf, .data$percentile)
+}
+
+
 #' For snapshot testing of graphs
 #'
 #' @param code Code to create a graph

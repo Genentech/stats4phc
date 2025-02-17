@@ -34,11 +34,9 @@ nonParametricPV <- function(outcome, score) {
   ppv <- vapply(
     thresh.predictions,
     function(x) {
-      yardstick::ppv_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      tp <- sum(outcome == 1 & x == 1)
+      fp <- sum(outcome == 0 & x == 1)
+      tp / (tp + fp)
     },
     numeric(1)
   )
@@ -46,11 +44,9 @@ nonParametricPV <- function(outcome, score) {
   npv <- vapply(
     thresh.predictions,
     function(x) {
-      yardstick::npv_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      tn <- sum(outcome == 0 & x == 0)
+      fn <- sum(outcome == 1 & x == 0)
+      tn / (tn + fn)
     },
     numeric(1)
   )
@@ -136,35 +132,27 @@ nonParametricTR <- function(outcome, score) {
 
   # Calc sensitivities and specificities at each risk percentile threshold
   senses <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
-      yardstick::sens_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      sum(outcome == 1 & x == 1) / sum(outcome == 1)
     },
     numeric(1)
   )
 
   specs <- vapply(
-    thresh.predictions[1:(length(score) - 1)],
+    thresh.predictions,
     function(x) {
-      yardstick::spec_vec(
-        truth = factor(outcome, levels = c("1", "0")),
-        estimate = factor(x, levels = c("1", "0")),
-        event_level = "first"
-      )
+      sum(outcome == 0 & x == 0) / sum(outcome == 0)
     },
     numeric(1)
   )
 
   # Create a data.frame
   dat <- data.frame(
-    score = c(min(score), score),
-    percentile = c(0, ecdf(score)(score)),
-    Sensitivity = c(1, senses, 0),
-    Specificity = c(0, specs, 1)
+    score = score,
+    percentile = ecdf(score)(score),
+    Sensitivity = senses,
+    Specificity = specs
   ) %>%
     tidyr::pivot_longer(
       cols = c("Sensitivity", "Specificity"),
